@@ -137,7 +137,7 @@ function display(e) {
     } else if (numOrOperator === "clear"){
         firstNum = 0;
         secondNum = 0;
-        para.textContent = "";
+        para.textContent = 0;
         displayText = "";
     } else if (numOrOperator === "dot") {
         if (!displayText.includes(".")){
