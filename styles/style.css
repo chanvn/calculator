@@ -1,0 +1,94 @@
+@font-face{
+    src: url('../fonts/Technology-Bold.ttf');
+    font-family:'technology';
+   }
+
+html, body{
+    height: 100%;
+    background-color: #CCCCFF;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.calculator {
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 55%;
+    width: 27.5%;
+    gap: 25px;
+    border-radius: 15px;
+    background-color: #202020;
+    padding: 7px;
+}
+
+.row {
+    flex-grow: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.btn, .output {
+    flex-grow: 1;
+    margin: 5px;
+}
+
+.output {
+    border: 1px solid black;
+    border-radius: 6px;
+    height: 100%;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background-color: white;
+}
+
+.para {
+    font-size: 4.5em;
+    margin-right: 5px;
+    font-family: Technology;
+}
+
+.row1{
+    height: 12.5%;
+    margin: 5px;
+}
+
+.btn {
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: large;
+}
+
+.operator {
+    background-color: #33FFFF;
+}
+
+.clear, .timesNeg1 {
+    background-color: #FFFF00;
+}
+
+.numb {
+    background-color: #00CC66;
+}
+
+.dot, .equal, .zero {
+    background-color: #CC0066;
+}
+
+.btn:active {
+    background-color: white;
+}
