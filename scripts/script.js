@@ -62,6 +62,9 @@ function display(e) {
             firstNum = Number(para.textContent);
             displayText = "";
             para.textContent = "";
+            if (currentOperator === "equal") {
+                firstNum = 0;
+            }
         }
         let mathOperationName = classesArr[2];
         isCalculated = false;
@@ -102,10 +105,15 @@ function display(e) {
     {
         let operatorName = classesArr[2];
         currentText = para.textContent;
+        console.log(currentText);
+        if (currentText === "") {
+            return;
+        }
         para.textContent = "";
         displayText = "";
         if (secondNum === 0 && firstNum !== 0){
             secondNum = Number(currentText);
+            console.log(secondNum);
             firstNum = operate(currentOperator,firstNum,secondNum);
             isCalculated = true;
             if (currentOperator == "equal") {
