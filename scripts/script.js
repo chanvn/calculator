@@ -144,6 +144,13 @@ function display(e) {
             displayText +=".";
             para.textContent = displayText;
         }
+    } else if (numOrOperator == "timesNeg1") {
+        let outputText = para.textContent;
+        if (outputText.startsWith("-")){
+            para.textContent = outputText.slice(1,outputText.length);
+        } else {
+            para.textContent = outputText.substring(0,0) + "-" + outputText;
+        }
     }
 }
 
